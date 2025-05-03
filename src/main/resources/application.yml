@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8089
   servlet:
     context-path: /admin-service
 spring:
@@ -20,7 +20,7 @@ spring:
   jpa:
     show-sql: ${SHOW_SQL:true}
     hibernate:
-      ddl-auto: ${DDL_AUTO:validate}
+      ddl-auto: ${DDL_AUTO:update}
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect

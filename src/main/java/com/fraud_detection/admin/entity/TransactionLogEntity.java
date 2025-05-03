@@ -11,7 +11,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "users")
+@Table(name = "transaction_logs")
 @AllArgsConstructor
 @NoArgsConstructor
 
@@ -20,16 +20,13 @@ import lombok.NoArgsConstructor;
 @Setter
 
 
-public class UserDetailsEntity {
+public class TransactionLogEntity {
     @Id
-    @Column(name = "user_id")
-    private String userId;
-    @Column(name = "email_id")
-    private String emailId;
-    @Column(name = "account_number")
-    private double accountNumber;
+    @Column(name = "transaction_id")
+    private String transactionId;
     @Column(name = "case_opened")
-    private String caseopened;
-
+    private String CaseOpened;
+    @Column(name = "status")
+    private String Status;
 
 }

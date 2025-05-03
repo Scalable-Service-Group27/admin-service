@@ -1,10 +1,10 @@
-package com.fraud_detection.notification;
+package com.fraud_detection.admin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class NotificationApplicationTests {
+@SpringBootTest(classes = AdminApplication.class)
+class AdminApplicationTests {
 
 	@Test
 	void contextLoads() {
