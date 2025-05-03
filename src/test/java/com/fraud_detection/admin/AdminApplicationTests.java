@@ -3,7 +3,7 @@ package com.fraud_detection.admin;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = AdminApplication.class)
+@SpringBootTest
 class AdminApplicationTests {
 
 	@Test
