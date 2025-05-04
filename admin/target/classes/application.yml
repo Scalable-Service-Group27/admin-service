@@ -1,0 +1,37 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: admin-service
+  datasource:
+    url: jdbc:mysql://mysql-22cbfef7-scalable-services-assignment-01042025.c.aivencloud.com:11181/fraud_management
+    username: avnadmin
+    password: AVNS_beR7beLStdrPaO5btIS
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  logging:
+    level:
+      root: INFO
+      com.fraud_detection: DEBUG
+  sql:
+    init:
+      mode: never
+  jpa:
+    show-sql: ${SHOW_SQL:true}
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  profiles:
+    active: dev
+application:
+  feature:
+    enable-fraud-detection: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true

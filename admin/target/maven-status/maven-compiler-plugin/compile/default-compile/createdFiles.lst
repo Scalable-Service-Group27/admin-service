@@ -1,0 +1,6 @@
+com/fraud_detection/admin/controller/AdminController.class
+com/fraud_detection/admin/entity/TransactionLogEntity$TransactionLogEntityBuilder.class
+com/fraud_detection/admin/entity/TransactionLogEntity.class
+com/fraud_detection/admin/service/AdminService.class
+com/fraud_detection/admin/AdminApplication.class
+com/fraud_detection/admin/repository/TransactionLogRepository.class
